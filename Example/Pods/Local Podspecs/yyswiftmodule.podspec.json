@@ -1,0 +1,22 @@
+{
+  "name": "yyswiftmodule",
+  "version": "0.1.0",
+  "summary": "A short description of yyswiftmodule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Yamyee/Spces",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yamyee": "quanrenyi@yy.com"
+  },
+  "source": {
+    "git": "https://github.com/Yamyee/swiftmodule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "yyswiftmodule/Classes/**/*"
+}

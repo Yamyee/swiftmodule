@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'yyswiftmodule'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of yyswiftmodule.'
 
 # This description is used to generate tags and improve search results.
@@ -21,20 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Yamyee/yyswiftmodule'
+  s.homepage         = 'https://github.com/Yamyee/Spces'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Yamyee' => 'quanrenyi@yy.com' }
-  s.source           = { :git => 'https://github.com/Yamyee/yyswiftmodule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Yamyee/swiftmodule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'yyswiftmodule/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'yyswiftmodule' => ['yyswiftmodule/Assets/*.png']
-  # }
+  # s.subspec 'Login' do |l|
+  #   l.source_files = 'yyswiftmodule/Classes/Login/*'
+  # end
+  
+#  s.resource_bundles = {
+#    'yyswiftmodule' => ['yyswiftmodule/Assets/*.{png,plist}']
+#  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
