@@ -7,10 +7,14 @@
 
 import Foundation
 
-public func YYLoginInterfaceInstance()->YYLoginInterface{
-    return YYLoginCore()
+extension YYMediator{
+    public static var login :YYLoginInterface{
+        return YYLoginCore()
+    }
 }
 public protocol YYLoginInterface {
     ///登录
     func login(_ account:String ,_ password:String)
+    
+    func checkLoginState()->Bool
 }

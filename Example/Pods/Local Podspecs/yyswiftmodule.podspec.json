@@ -1,6 +1,6 @@
 {
   "name": "yyswiftmodule",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A short description of yyswiftmodule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Yamyee/Spces",
@@ -13,10 +13,33 @@
   },
   "source": {
     "git": "https://github.com/Yamyee/swiftmodule.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "yyswiftmodule/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Mediator",
+      "source_files": "yyswiftmodule/Classes/Mediator/*"
+    },
+    {
+      "name": "Login",
+      "source_files": "yyswiftmodule/Classes/Login/*",
+      "dependencies": {
+        "yyswiftmodule/Mediator": [
+
+        ]
+      }
+    },
+    {
+      "name": "User",
+      "source_files": "yyswiftmodule/Classes/User/*",
+      "dependencies": {
+        "yyswiftmodule/Mediator": [
+
+        ]
+      }
+    }
+  ]
 }

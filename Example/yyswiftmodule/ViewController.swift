@@ -13,8 +13,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let instance = YYLoginInterfaceInstance()
+        let instance = YYMediator.login
         instance.login("", "")
+        
+        let user = YYMediator.user
+        user.token
     }
 
     override func didReceiveMemoryWarning() {

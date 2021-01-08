@@ -7,10 +7,13 @@
 
 import Foundation
 
- class YYLoginCore :YYLoginInterface{
+class YYLoginCore :YYLoginInterface{
+    func checkLoginState() -> Bool {
+        return YYMediator.user.token?.isEmpty ?? true
+    }
     
     func login(_ account: String, _ password: String) {
-        
+        print("%s",#function)
     }
     
 }
